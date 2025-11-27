@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling Demo</title>
+    <link rel="stylesheet" href="gg.css">
+</head>
+    <body>
+    <h2>Event Bubbling Example</h2>
+
+  <!-- กล่องแม่ -->
+    <div id="outer-box" class="box">
+
+    <!-- กล่องลูก -->
+    <div id="middle-box" class="box">
+
+      <!-- กล่องหลาน -->
+    <div id="inner-box" class="box">
+
+      </div>
+    </div>
+  </div>
+
+  <button id="reset-btn">Reset</button>
+
+  <script defer src="BUBBLING.js"></script>
+</body>
+</html>

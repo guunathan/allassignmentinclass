@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tictactoe</title>
+    <link rel="stylesheet" href="tictactoe.css">   
+</head>
+<body>
+    <h1 class="maintext">TIC TAC TOE</h1>
+
+        <div id="board"> 
+            <div data-index="1" class="title right-border bottom-border"></div>
+            <div data-index="2" class="title right-border bottom-border"></div>
+            <div data-index="3" class="title bottom-border"></div>
+            <div data-index="4" class="title right-border bottom-border"></div>
+            <div data-index="5" class="title right-border bottom-border"></div>
+            <div data-index="6" class="title bottom-border"></div>
+            <div data-index="7" class="title right-border"></div>
+            <div data-index="8" class="title right-border"></div>
+            <div data-index="9" class="title"></div>
+            <div id="strike" class="strike"></div>
+        </div>
+
+
+        <div id="gameover" class="hidden">
+        <h2 id="gameText">Winner is X</h2>
+        <button id="playagain">Play Again</button>   
+    </div>
+
+    <script defer src="tictactoe.js"></script>
+</body>
+</html>

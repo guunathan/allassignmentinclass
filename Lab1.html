@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>lab1-1</title>
+  <style>
+
+    td img {
+      margin-right: 12px;
+    }
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: serif;
+    }
+    table {
+      border-collapse: collapse;
+      margin-left: 0;
+      width: auto;
+    }
+
+    th,td {
+      color:black;
+      border-top: 1px solid #dbd8d8;
+      border-bottom: 1px solid #dbd8d8;
+      padding: 6px 10px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    a {
+      text-decoration:none; 
+      color: black;
+    }
+   .circle {
+  display:inline-block;
+  width:13.4px;
+  height:13.4px;
+  border-radius:100%;
+  margin: 0 2px;
+  vertical-align:middle;
+}
+
+.circle.win{
+  background: green;
+}
+
+.circle.lose{
+  background: red;
+
+}
+.circle.draw{
+  background: gray;
+}
+
+th:first-child,td:first-child {
+  text-align: left;
+  padding-left: 10px;
+  width:360px;
+
+}
+  </style>
+</head>
+        <body>
+
+<table>
+    <tr>
+      <th>สโมสร</th>
+      <th>แข่ง</th>
+      <th>ชนะ</th>
+      <th>เสมอ</th>
+      <th>แพ้</th>
+      <th>ได้</th>
+      <th>เสีย</th>
+      <th>ต่าง</th>
+      <th>แต้ม</th>
+      <th>5นัดล่าสุด</th>
+    </tr>
+
+    <tr>
+      <td>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/800px-Arsenal_FC.svg.png" alt="อาร์เซนอล" style="height:20px;vertical-align:middle;"><a> อาร์เซนอล</a></td>
+      <td>19</td>
+      <td>16</td>
+      <td>2</td>
+      <td>1</td>
+      <td>45</td>
+      <td>16</td>
+      <td>29</td>
+      <td>50</td>
+      <td>
+        <span class="circle win"></span>
+        <span class="circle win"></span>
+        <span class="circle draw"></span>
+        <span class="circle win"></span>
+        <span class="circle win"></span>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td><img src="https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg" alt ="แมนซิตี" style="height:20px;vertical-align:middle;">แมนซิตี</></td>
+      <td>20</td>
+      <td>14</td>
+      <td>3</td>
+      <td>3</td>
+      <td>53</td>
+      <td>20</td>
+      <td>33</td>
+      <td>45</td>
+      <td>
+        <span class="circle win"></span>
+        <span class="circle lose"></span>
+        <span class="circle win"></span>
+        <span class="circle draw"></span>
+        <span class="circle lose"></span>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td><img src="https://upload.wikimedia.org/wikipedia/en/5/56/Newcastle_United_Logo.svg" alt="นิวคาสเซิล" style ="height:20px;vertical-align:middle;">นิวคาสเซิล</img></td>
+      <td>20</td>
+      <td>10</td>
+      <td>9</td>
+      <td>1</td>
+      <td>33</td>
+      <td>11</td>
+      <td>22</td>
+      <td>39</td>
+      <td>
+        <span class="circle draw"></span>
+        <span class="circle win"></span>
+        <span class="circle draw"></span>
+        <span class="circle win"></span>
+        <span class="circle draw"></span>
+      </td>
+    </tr>
+
+    <tr>
+      <td><img src="https://tse3.mm.bing.net/th/id/OIP.6yVZLplMFQQxqN8cY29YfAHaHk?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="แมนยู" style="height:20px;vertical-align:middle;">แมนยู</></td>
+      <td>20</td>
+      <td>12</td>
+      <td>3</td>
+      <td>5</td>
+      <td>32</td>
+      <td>25</td>
+      <td>7</td>
+      <td>39</td>
+      <td>
+        <span class="circle win"></span>
+        <span class="circle lose"></span>
+        <span class="circle win"></span>
+        <span class="circle win"></span>
+        <span class="circle lose"></span>
+      </td>
+    </tr>
+
+    <tr>
+      <td><img src="https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg" alt="สเปอร์ส" style="height:20px;vertical-align:middle;">สเปอร์ส</img></td>
+      <td>21</td>
+      <td>11</td>
+      <td>3</td>
+      <td>7</td>
+      <td>40</td>
+      <td>31</td>
+      <td>9</td>
+      <td>36</td>
+      <td>
+        <span class="circle lose"></span>
+        <span class="circle lose"></span>
+        <span class="circle draw"></span>
+        <span class="circle win"></span>
+        <span class="circle lose"></span>
+      </td>
+    </tr>
+
+    <tr>
+      <td><img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Brighton_%26_Hove_Albion_logo.svg" alt="ไบรท์ตัน" style="height:20px;vertical-align:middle;">ไบรท์ตัน</img></td>
+      <td>19</td>
+      <td>9</td>
+      <td>4</td>
+      <td>6</td>
+      <td>37</td>
+      <td>27</td>
+      <td>10</td>
+      <td>31</td>
+      <td>
+        <span class="circle win"></span>
+        <span class="circle win"></span>
+        <span class="circle draw"></span>
+        <span class="circle lose"></span>
+        <span class="circle win"></span>
+      </td>
+    </tr>
+
+    <tr>
+      <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Fulham_FC_%28shield%29.svg/320px-Fulham_FC_%28shield%29.svg.png" alt="ฟูลัม" style="height:20px;vertical-align:middle;">ฟูลัม</iร></td>
+      <td>21</td>
+      <td>9</td>
+      <td>4</td>
+      <td>8</td>
+      <td>32</td>
+      <td>30</td>
+      <td>2</td>
+      <td>31</td>
+      <td>
+        <span class="circle lose"></span>
+        <span class="circle lose"></span>
+        <span class="circle draw"></span>
+        <span class="circle win"></span>
+        <span class="circle lose"></span>
+      </td>
+    </tr>
+
+    <tr>
+      <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Brentford_FC_crest.svg/300px-Brentford_FC_crest.svg.png" alt ="เบรนท์ฟอร์ด" style="height:20px;vertical-align:middle;">เบรนท์ฟอร์ด</img></td>
+      <td>20</td>
+      <td>7</td>
+      <td>9</td>
+      <td>4</td>
+      <td>32</td>
+      <td>28</td>
+      <td>4</td>
+      <td>30</td>
+      <td>
+        <span class="circle win"></span>
+        <span class="circle win"></span>
+        <span class="circle win"></span>
+        <span class="circle draw"></span>
+        <span class="circle win"></span>
+      </td>
+    </tr>
+
+    <tr>
+      <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/300px-Liverpool_FC.svg.png" alt="ลิเวอร์พูล" style="height:20px;vertical-align:middle;">ลิเวอร์พูล</img></td>
+      <td>19</td>
+      <td>8</td>
+      <td>5</td>
+      <td>6</td>
+      <td>34</td>
+      <td>25</td>
+      <td>9</td>
+      <td>29</td>
+      <td>
+        <span class="circle lose"></span>
+        <span class="circle lose"></span>
+        <span class="circle draw"></span>
+        <span class="circle lose"></span>
+        <span class="circle win"></span>
+      </td>
+    </tr>
+
+    <tr>
+      <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/323px-Chelsea_FC.svg.png" alt="เชลซี" style="height:20px;vertical-align:middle;">เชลซี</img></td>
+      <td>20</td>
+      <td>8</td>
+      <td>5</td>
+      <td>7</td>
+      <td>22</td>
+      <td>21</td>
+      <td>1</td>
+      <td>29</td>
+
+      <td>
+        <span class="circle draw"></span>
+        <span class="circle win"></span>
+        <span class="circle lose"></span>
+        <span class="circle lose"></span>
+        <span class="circle win"></span> 
+      </td>
+
+      <tr>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Aston_Villa_FC_new_crest.svg/320px-Aston_Villa_FC_new_crest.svg.png" alt="แอสตันวิลลา" style="height:20px;vertical-align:middle;"></img>แอสตันวิลลา</td>
+        <td>20</td>
+        <td>8</td>
+        <td>4</td>
+        <td>8</td>        
+        <td>23</td>
+        <td>27</td>
+        <td>-4</td>
+        <td>28</td>  
+        <td>
+          <span class="circle win"></span>
+          <span class="circle win"></span>
+          <span class="circle draw"></span>
+          <span class="circle win"></span>
+          <span class="circle lose"></span>  
+      </tr>
+
+       <tr>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/Crystal_Palace_FC_logo_%282022%29.svg/278px-Crystal_Palace_FC_logo_%282022%29.svg.png" alt="คริสตัลพาเลช" style="height:20px;vertical-align:middle;"></img>คริสตัลพาเลช</td>
+        <td>20</td>
+        <td>6</td>
+        <td>6</td>
+        <td>8</td>        
+        <td>18</td>
+        <td>27</td>
+        <td>-9</td>
+        <td>24</td>  
+        <td>
+          <span class="circle draw"></span>
+          <span class="circle draw"></span>
+          <span class="circle lose"></span>
+          <span class="circle lose"></span>
+          <span class="circle win"></span>  
+      </tr>
+
+       <tr>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Nottingham_Forest_F.C._logo.svg/180px-Nottingham_Forest_F.C._logo.svg.png" alt="ฟอเรสต์" style="height:20px;vertical-align:middle;"></img>ฟอเรสต์</td>
+        <td>20</td>
+        <td>5</td>
+        <td>6</td>
+        <td>9</td>        
+        <td>16</td>
+        <td>35</td>
+        <td>-7</td>
+        <td>21</td>  
+        <td>
+          <span class="circle draw"></span>
+          <span class="circle win"></span>
+          <span class="circle win"></span>
+          <span class="circle draw"></span>
+          <span class="circle lose"></span>  
+      </tr>
+
+       <tr>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Leicester_City_crest.svg/300px-Leicester_City_crest.svg.png" alt="เลสเตอร์" style="height:20px;vertical-align:middle;"></img>เลสเตอร์</td>
+        <td>20</td>
+        <td>5</td>
+        <td>3</td>
+        <td>12</td>        
+        <td>28</td>
+        <td>35</td>
+        <td>-7</td>
+        <td>18</td>  
+        <td>
+          <span class="circle draw"></span>
+          <span class="circle lose"></span>
+          <span class="circle lose"></span>
+          <span class="circle lose"></span>
+          <span class="circle lose"></span>  
+      </tr>
+
+       <tr>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Leeds_United_F.C._logo.svg/255px-Leeds_United_F.C._logo.svg.png" alt="ลีดส์" style="height:20px;vertical-align:middle;">ลีดส์</img></td>
+        <td>19</td>
+        <td>4</td>
+        <td>6</td>
+        <td>9</td>        
+        <td>26</td>
+        <td>33</td>
+        <td>-7</td>
+        <td>18</td>  
+        <td>
+          <span class="circle draw"></span>
+          <span class="circle lose"></span>
+          <span class="circle draw"></span>
+          <span class="circle draw"></span>
+          <span class="circle lose"></span>  
+      </tr>
+
+       <tr>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/West_Ham_United_FC_logo.svg/278px-West_Ham_United_FC_logo.svg.png" alt="เวลต์แฮม" style="height:20px;vertical-align:middle;"></img>เวลต์แฮม</td>
+        <td>20</td>
+        <td>5</td>
+        <td>3</td>
+        <td>12</td>        
+        <td>17</td>
+        <td>25</td>
+        <td>-8</td>
+        <td>18</td>  
+        <td>
+          <span class="circle win"></span>
+          <span class="circle lose"></span>
+          <span class="circle draw"></span>
+          <span class="circle lose"></span>
+          <span class="circle lose"></span>  
+      </tr>
+
+       <tr>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Wolverhampton_Wanderers_FC_crest.svg/330px-Wolverhampton_Wanderers_FC_crest.svg.png" alt="วูล์ฟแฮมป์ตัน" style="height:20px;vertical-align:middle;"></img>วูล์ฟแฮมป์ตัน</td>
+        <td>20</td>
+        <td>4</td>
+        <td>5</td>
+        <td>11</td>        
+        <td>12</td>
+        <td>30</td>
+        <td>-18</td>
+        <td>17</td>  
+        <td>
+          <span class="circle lose"></span>
+          <span class="circle win"></span>
+          <span class="circle draw"></span>
+          <span class="circle lose"></span>
+          <span class="circle win"></span>  
+      </tr>
+
+       <tr>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/AFC_Bournemouth_%282013%29.svg/240px-AFC_Bournemouth_%282013%29.svg.png" alt="บอร์นมัธ" style="height:20px;vertical-align:middle;"></img>บอร์นมัธ</td>
+        <td>20</td>
+        <td>4</td>
+        <td>5</td>
+        <td>11</td>        
+        <td>19</td>
+        <td>42</td>
+        <td>-23</td>
+        <td>17</td>  
+        <td>
+          <span class="circle draw"></span>
+          <span class="circle lose"></span>
+          <span class="circle lose"></span>
+          <span class="circle lose"></span>
+          <span class="circle lose"></span>  
+      </tr>
+
+       <tr>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/315px-Everton_FC_logo.svg.png" alt="เอฟเวอร์ตัน" style="height:20px;vertical-align:middle;"></iร>เอฟเวอร์ตัน</td>
+        <td>20</td>
+        <td>3</td>
+        <td>6</td>
+        <td>11</td>        
+        <td>15</td>
+        <td>28</td>
+        <td>-13</td>
+        <td>15</td>  
+        <td>
+          <span class="circle lose"></span>
+          <span class="circle lose"></span>
+          <span class="circle lose"></span>
+          <span class="circle draw"></span>
+          <span class="circle lose"></span>  
+      </tr>
+
+     <tr>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/FC_Southampton.svg/300px-FC_Southampton.svg.png" alt="เชาแธมป์ตัน" style="height:20px;vertical-align:middle;"></iรน>เชาแธมป์ตัน</td>
+        <td>20</td>
+        <td>8</td>
+        <td>4</td>
+        <td>8</td>        
+        <td>23</td>
+        <td>27</td>
+        <td>-4</td>
+        <td>28</td>  
+        <td>
+          <span class="circle lose"></span>
+          <span class="circle win"></span>
+          <span class="circle lose"></span>
+          <span class="circle lose"></span>
+          <span class="circle lose"></span>  
+      </tr>
+
+
+
+
+
+

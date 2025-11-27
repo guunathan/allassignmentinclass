@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css227.css">
+    <title>CSS227</title>
+</head>
+<body>
+    <header class='header'>
+        <div class='logo-box'>
+            <img src='logo_for_web_pro.png' alt='Logo' class='logo'>
+        </div>
+
+        <div class='text-box'>
+            <h1 class='primary'>
+                <span class='main'>CSS227</span>
+                <span class='sub'>Your web journey start here</span>
+                <a href='#' id='replay'class='btn btn-white'>Disscover the course</a>
+            </h1>
+        </div>
+    </header>
+    
+    <script>
+    document.getElementById('replay').addEventListener('click', function (event){
+        event.preventDefault();
+        const mainText = document.querySelector('.main');
+        const subText = document.querySelector('.sub');
+        // รีเซ็ต animation ก่อน
+        mainText.style.animation = 'none';
+        subText.style.animation = 'none';
+        // trigger reflow
+        void mainText.offsetWidth;
+        // ใส่ animation ใหม่ (ชื่อ animation ต้องตรงกับที่ประกาศใน CSS)
+        mainText.style.animation = 'moveright 1.2s ease-out';
+        subText.style.animation = 'moveleft 1.2s ease-out 0.3s';
+    });
+    </script>
+
+</body>
+</html>
